@@ -1,0 +1,9 @@
+npm install
+npm install express
+npm install -D @types/express tsx
+npx tsx src/aula25/index.ts 
+npx playwright install-dep
+npx playwright test
+npx playwright test --headed
+npx playwright test --ui
+npx playwright install --with-deps webkit

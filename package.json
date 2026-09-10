@@ -1,0 +1,21 @@
+{
+  "name": "automacao-qa",
+  "main": "dist/aula25/index.js",
+  "type": "module",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "dev": "npm run type-check && tsx src/aula25/index.ts",
+    "build": "tsc",
+    "start": "node ."
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.5.0",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
