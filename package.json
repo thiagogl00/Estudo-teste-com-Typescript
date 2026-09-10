@@ -1,12 +1,17 @@
 {
   "name": "automacao-qa",
-  "main": "dist/aula25/index.js",
+  "main": "dist/aula25/server.js",
   "type": "module",
   "scripts": {
     "type-check": "tsc --noEmit",
-    "dev": "npm run type-check && tsx src/aula25/index.ts",
+    "dev": "npm run type-check && tsx src/aula25/server.ts",
+    "dev:server": "tsx src/aula25/server.ts",
     "build": "tsc",
-    "start": "node ."
+    "start": "node .",
+    "test": "playwright test",
+    "test:unit": "playwright test tests/unit.spec.ts",
+    "test:inte": "playwright test tests/integration.spec.ts",
+    "test:e2e": "playwright test tests/example.spec.ts"
   },
   "devDependencies": {
     "@playwright/test": "^1.63.0",

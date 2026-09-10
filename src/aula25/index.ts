@@ -1,8 +1,6 @@
 import express from 'express';
 
 const app = express();
-const PORT = 3000;
-
 app.use(express.urlencoded({ extended: true }));
 
 
@@ -165,10 +163,3 @@ app.get('/', (_req, res) => {
 
 
 export { app };
-
-
-if (process.env.NODE_ENV !== 'test') {
-  app.listen(PORT, () => {
-    console.log(`Servidor rodando em http://localhost:${PORT}`);
-  });
-}
